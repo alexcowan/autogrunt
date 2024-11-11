@@ -1,0 +1,52 @@
+
+
+<div class="top-bar">
+  <ul class="nav-list">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Parts</a></li>
+    <li><a href="#">Search</a></li>
+    <li><a href="#">Help</a></li>
+  </ul>
+
+  <div id="search-box">
+    <input type="text" name="parts-search" placeholder="Mfg., Model, or Part Number" size=30>
+  </div>
+</div>
+
+<div id="search-controls">
+  <div id="result-sort">
+    Sort By
+    <select>
+					<option value="None">Popularity</option>
+					<option value="Acme">Price</option>
+					<option value="Bacme">Manufacturer</option>
+				</select>
+  </div>
+  <div id="filter-parts">
+    Search By
+    <select id="ddMfr">
+				<option value="All">Manufacturer</option>
+				<option value="Acme">Acme</option>
+				<option value="Bacme">Bacme</option>
+				<option value="Cacme">Cacme</option>
+				<option value="Dacme">Dacme</option>
+			</select>
+    <select id="ddModel">
+				<option value="All">Model</option>
+				<option value="TooCool">TooCool</option>
+				<option value="TooHot">TooHot</option>
+				<option value="JustRight">JustRight</option>
+				<option value="Coolerator">Coolerator</option>
+			</select>
+    <select>
+				<option value="All">Type</option>
+				<option value="Sniggler">Sniggler</option>
+				<option value="Wiggler">Wiggler</option>
+				<option value="Jiggler">Jiggler</option>
+				<option value="Tiggler">Tiggler</option>
+			</select>
+  </div>
+  <button type="button" id='go-btn'>Go</button>
+</div>
+
+<div id="parts-content" />
