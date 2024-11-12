@@ -8,7 +8,7 @@ goButton.addEventListener('click', filterParts);
 function filterParts() {
   //Is the function working?
   console.log('go!');
-
+//comment
   //get any values selected in the dropdown and make sure it's working
   selMfr = document.getElementById('ddMfr').value
   selModel = document.getElementById('ddModel').value
