@@ -1,19 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HVAC Parts Search</title>
-    <link rel="stylesheet" href="autogrunt.css">
-    <script src="autogrunt.js"></script>
-</head>
-<body>
-
-
-
 <div class="top-bar">
   <ul class="nav-list">
-    <li><a href="#">Home</a></li>
+    <li><a href="#">Homes</a></li>
     <li><a href="#">Parts</a></li>
     <li><a href="#">Search</a></li>
     <li><a href="#">Help</a></li>
@@ -24,43 +11,77 @@
   </div>
 </div>
 
+<div id="toggle-search">
+  <img src="https://www.alexandercowan.com/wp-content/uploads/2018/01/show-hide-icon.png" alt="search control toggle">
+</div>
+
 <div id="search-controls">
   <div id="result-sort">
     Sort By
     <select>
-					<option value="None">Popularity</option>
-					<option value="Acme">Price</option>
-					<option value="Bacme">Manufacturer</option>
-				</select>
+      <option value="None">Popularity</option>
+      <option value="Acme">Price</option>
+      <option value="Bacme">Manufacturer</option>
+    </select>
   </div>
   <div id="filter-parts">
     Search By
     <select id="ddMfr">
-				<option value="All">Manufacturer</option>
-				<option value="Acme">Acme</option>
-				<option value="Bacme">Bacme</option>
-				<option value="Cacme">Cacme</option>
-				<option value="Dacme">Dacme</option>
-			</select>
+      <option value="All">Manufacturer</option>
+      <option value="Acme">Acme</option>
+      <option value="Bacme">Bacme</option>
+      <option value="Cacme">Cacme</option>
+      <option value="Dacme">Dacme</option>
+    </select>
     <select id="ddModel">
-				<option value="All">Model</option>
-				<option value="TooCool">TooCool</option>
-				<option value="TooHot">TooHot</option>
-				<option value="JustRight">JustRight</option>
-				<option value="Coolerator">Coolerator</option>
-			</select>
+      <option value="All">Model</option>
+      <option value="TooCool">TooCool</option>
+      <option value="TooHot">TooHot</option>
+      <option value="JustRight">JustRight</option>
+      <option value="Coolerator">Coolerator</option>
+    </select>
     <select>
-				<option value="All">Type</option>
-				<option value="Sniggler">Sniggler</option>
-				<option value="Wiggler">Wiggler</option>
-				<option value="Jiggler">Jiggler</option>
-				<option value="Tiggler">Tiggler</option>
-			</select>
+      <option value="All">Type</option>
+      <option value="Sniggler">Sniggler</option>
+      <option value="Wiggler">Wiggler</option>
+      <option value="Jiggler">Jiggler</option>
+      <option value="Tiggler">Tiggler</option>
+    </select>
   </div>
   <button type="button" id='go-btn'>Go</button>
 </div>
 
-<div id="parts-content" />
-
-</body>
-</html>
+<div id="parts-content">
+  <div class="catalog-part" mfr="Acme" model="TooCool">
+    <img src="https://www.alexandercowan.com/wp-content/uploads/2017/12/PCB-board-150px.png" alt="PCB board">
+    <div class="overlay">
+      <p>
+        Acme #GR1688<br>87 Orders<br>$12.30 Same Day</p>
+    </div>
+  </div>
+  
+  <div class="catalog-part" mfr="Bacme" model="TooHot">
+    <img src="https://www.alexandercowan.com/wp-content/uploads/2017/12/hvac-fan-photo-2-post-150px.png" alt="PCB board">
+    <div class="overlay">
+      <p>
+        Bacme #BR2048<br>301 Orders<br>$9.20 Two Day</p>
+    </div>
+  </div>
+  
+  <div class="catalog-part" mfr="Dacme" model="JustRight">
+    <img src="https://www.alexandercowan.com/wp-content/uploads/2017/12/hvac-board-4-post-150px.png" alt="PCB board 2">
+    <div class="overlay">
+      <p>
+        Dacme #TR0988<br>12 Orders<br>$11.70 Same Day</p>
+    </div>
+  </div>
+  
+  <div class="catalog-part" mfr="Cacme" model="TooHot">
+    <img src="https://www.alexandercowan.com/wp-content/uploads/2017/12/hvac-metal-part-post-150px.png" alt="PCB board">
+    <div class="overlay">
+      <p>
+        Cacme #RT7612<br>87 Orders<br>$90.34 Same Day</p>
+    </div>
+  </div>
+  
+</div>
